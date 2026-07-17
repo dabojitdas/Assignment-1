@@ -1,6 +1,46 @@
-body{
-    background-color: rgb(222, 150, 55);
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
 }
-p{
-    color: blue;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    background-color: #1d4ed8;
+    padding: 4px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    width: 192px;
+    height: 56px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+ul li a {
+    color: #575757;
+    text-decoration: none;
 }
