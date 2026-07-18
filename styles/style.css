@@ -4,7 +4,7 @@
     font-family: "Inter", sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -15,7 +15,7 @@ nav {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: auto;
 }
 
@@ -27,10 +27,14 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: blue;
+}
+
 .nav-button {
     border-radius: 12px;
-    width: 192px;
-    height: 56px;
+    width: 180px;
+    height: 45px;
     padding: 4px;
     font-weight: bold;
     font-size: 15px;
@@ -41,13 +45,19 @@ ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
 }
 
 ul li a {
     color: #575757;
     text-decoration: none;
+    padding: 10px;
+}
+
+ul li a:hover {
+    background-color: darkgrey;
+    border-radius: 8px;
 }
 
 .hero {
@@ -64,7 +74,7 @@ ul li a {
 
 .hero img {
     width: 1551px;
-    height: 786px;
+    height: 710px;
     position: static;
     object-fit: cover;
     z-index: 1;
@@ -74,49 +84,47 @@ ul li a {
     content: "";
     position: absolute;
     width: 1551px;
-    height: 786px;
+    height: 710px;
     inset: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.45) 50%, rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to bottom, rgba(255, 254, 254, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
     z-index: 2;
-    left: 20%;
+    left: 0;
 }
 
 .hero h1 {
-    padding: 20px;
-    width: 840px;
+    padding: 18px;
+    width: 800px;
     height: 84px;
-    font-size: 80px;
-    line-height: 1;
+    font-size: 70px;
     position: absolute;
     text-align: center;
     color: #ffffff;
     top: 14%;
-    left: 34%;
+    left: 21%;
     z-index: 3;
 }
 
 .hero p {
-    width: 829px;
-    height: 108px;
-    font-size: 23px;
-    font-style: 400px;
+    width: 710px;
+    height: 70px;
+    font-size: 20px;
     position: absolute;
     text-align: center;
     color: #ffffff;
     top: 30%;
-    left: 35%;
+    left: 26%;
     z-index: 4;
 }
 
 .hero-button {
-    width: 282px;
-    height: 74px;
-    padding: 8px;
+    width: 240px;
+    height: 65px;
+    padding: 4px;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     position: absolute;
     top: 80%;
-    left: 45%;
+    left: 42%;
     z-index: 5;
 }
